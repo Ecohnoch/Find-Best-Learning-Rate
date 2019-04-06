@@ -2,13 +2,25 @@
 
 This repo aims to find the best learning rate for my deep learning research.
 
+### Usage
+
 Download the full repo and just run:
 
 ```
 $ python3 template.py
 ```
 
-It is an example for MNIST data, the lr\_schedule and Loss changes can be find in the two jpg files.
+It is an example for MNIST data, the lr\_schedule and Loss changes can be found in the two jpg files.
+
+Lr schedule:
+
+![lr_schedule](https://github.com/Ecohnoch/Find-Best-Learning-Rate/blob/master/lr_schedule.jpg)
+
+MNIST Loss changes:
+
+![output](https://github.com/Ecohnoch/Find-Best-Learning-Rate/blob/master/output.jpg)
+
+
 
 ### Face Recognition
 
