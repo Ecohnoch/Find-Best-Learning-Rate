@@ -2,6 +2,14 @@
 
 This repo aims to find the best learning rate for my deep learning research.
 
+Download the full repo and just run:
+
+```
+$ python3 template.py
+```
+
+It is an example for MNIST data, the lr\_schedule and Loss changes can be find in the two jpg files.
+
 ### Face Recognition
 
 Src Repo: [https://github.com/Ecohnoch/Tiny-Face-Recognition](https://github.com/Ecohnoch/Tiny-Face-Recognition)
