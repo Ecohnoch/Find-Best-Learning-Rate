@@ -94,7 +94,7 @@ class Main:
             global_step = tf.Variable(name='global_step', initial_value=0, trainable=False)
             inc_op = tf.assign_add(global_step, 1, name='increment_global_step')
             lr_steps, values = lr_method.lr_schedule()
-            lr_method.plot_lr_schedule()
+            # lr_method.plot_lr_schedule()
             lr = tf.train.piecewise_constant(global_step, lr_steps, values, name='lr_schedule')
             opt = tf.train.MomentumOptimizer(learning_rate=lr, momentum=0.9)
             train_op = opt.minimize(loss)
@@ -112,7 +112,7 @@ class Main:
             plt.xlabel('learning rate')
             plt.ylabel('loss')
             plt.plot(np.log(values[:len(loss_vals)]), loss_vals)
-            plt.show()
+            # plt.show()
             plt.savefig('output.jpg')
 
 if __name__ == '__main__':
